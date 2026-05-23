@@ -1,21 +1,60 @@
-<<<<<<< HEAD
-# React + Vite
+# Zaptro – A Modern Digital Shopping Experience Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zaptro is a modern e-commerce web platform designed to deliver a fast, responsive, and user-friendly digital shopping experience. It includes product discovery, cart management, wishlist support, smart shopping flow, and a clean responsive UI for a smooth online shopping experience.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Coming Soon
 
-## React Compiler
+## 📌 Project Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Zaptro is built as a digital shopping platform where users can explore products, view product details, add items to cart, manage wishlist items, and experience a modern e-commerce workflow. The goal of this project is to create a clean, practical, and user-friendly shopping website with features inspired by real-world e-commerce platforms.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Zaptro
-Zaptro is a modern e-commerce web platform designed to deliver a fast, responsive, and user-friendly digital shopping experience with clean UI, product discovery, cart flow, and smart shopping features.
->>>>>>> a294907798b7a63688b8b823691cde4af2ee8a5d
+- Modern and responsive user interface
+- Product listing and category-based browsing
+- Product details page
+- Add to cart functionality
+- Wishlist management
+- Cart quantity update and item removal
+- Checkout flow
+- Location-based shopping experience
+- AI chatbot assistance for product search and recommendations
+- Voice search support
+- Image search support
+- Loading skeletons for better user experience
+- Clean navigation and smooth user flow
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Context API
+- Node.js
+- Git & GitHub
+
+## 📂 Folder Structure
+
+```bash
+ZAPTRO/
+│
+├── public/
+├── src/
+│   ├── Components/
+│   ├── Context/
+│   ├── Pages/
+│   ├── assets/
+│   ├── hooks/
+│   ├── services/
+│   ├── utils/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── vite.config.js
+└── README.md
