@@ -26,9 +26,33 @@ const ProductGallery = () => {
         <p>Discover our most popular products loved by customers</p>
       </div>
 
+      <div className="home-horizontal-scroll mobile-only-flex">
+        {data.slice(0, 5).map((item) => {
+          const price = item.priceCents / 100
+          const rating = item.rating?.stars || 0
+          const wishlisted = isWishlisted(item.id)
+          const discount = item.originalPrice ? Math.round(((item.originalPrice - price) / item.originalPrice) * 100) : 0
+          
+          return (
+            <div key={`h-${item.id}`} className="home-card horizontal-card" onClick={() => openProduct(item.id)}>
+              <div className="home-image-wrapper">
+                <img src={item.image} alt={item.name} className="home-product-image" />
+                {discount > 0 && <span className="discount-badge">{discount}% OFF</span>}
+              </div>
+              <div className="home-info">
+                <h3 className="home-title">{item.name}</h3>
+                <div className="home-price">
+                  <span className="current">₹ {price.toFixed(2)}</span>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
       <div className="home-product-grid">
 
-        {data.slice(0, 30).map((item) => {
+        {data.slice(5, 30).map((item) => {
 
           const price = item.priceCents / 100
           const rating = item.rating?.stars || 0

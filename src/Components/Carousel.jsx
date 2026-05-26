@@ -5,9 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Category from "./Category";
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
     const { data } = useContext(DataContext);
+    const navigate = useNavigate();
 
 const SamplePrevArrow = ({ className, style, onClick }) => {
   return (
@@ -73,19 +75,19 @@ const SampleNextArrow = ({ className, style, onClick }) => {
             <Category />
             <Slider {...settings}>
                 {data?.slice(10, 19).map((item, index) => (
-                    <div key={item.id} className="carousel">
+                    <div key={item.id} className="carousel" onClick={() => navigate(`/product/${item.id}`)} style={{ cursor: 'pointer' }}>
                         <div className="slider">
                             <div className="hero-text">
                                 <span className="category">{item.subCategory}</span>
                                 <h2>{item.name}</h2>
-                                <p className="desc">
+                                <p className="desc mobile-hide">
                                     {item.description}
                                 </p>
                                 <div className="bottom-info">
                                     <p className="price">
                                         ₹ {(item.priceCents / 100).toFixed(2)}
                                     </p>
-                                    <p className="rating">
+                                    <p className="rating mobile-hide">
                                         ⭐ {item.rating.stars} ({item.rating.count})
                                     </p>
                                 </div>

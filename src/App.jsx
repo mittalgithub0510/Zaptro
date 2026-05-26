@@ -7,6 +7,7 @@ import AIChatBot from './Components/AIChatBot'
 import ProtectedRoute from './Components/ProtectedRoute'
 import LoadingSkeleton from './Components/LoadingSkeleton'
 import { useGeolocation } from './hooks/useGeolocation'
+import BottomNav from './Components/BottomNav'
 
 const Home        = lazy(() => import('./Pages/Home'))
 const About       = lazy(() => import('./Pages/About'))
@@ -75,6 +76,7 @@ const App = () => {
       </Suspense>
 
       <Footer />
+      <BottomNav />
       <AIChatBot />
     </div>
   )
