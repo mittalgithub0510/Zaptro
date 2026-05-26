@@ -1810,3 +1810,121 @@ html {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
 }
+
+/* ===================================
+   MOBILE RESPONSIVE LAYOUT
+   =================================== */
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .Navbar {
+    padding: 10px 15px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .nav-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .zaptro {
+    padding-left: 0;
+    gap: 20px;
+  }
+  
+  .address {
+    font-size: 11px;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .headingtags {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  /* Hero Carousel */
+  .carousel {
+    height: auto;
+    min-height: 400px;
+    padding: 20px 10px;
+  }
+  
+  .slider {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  
+  .hero-text {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .desc {
+    margin: 0 auto 20px auto;
+  }
+  
+  .hero-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* Categories */
+  .Categorys {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 10px;
+    gap: 20px;
+  }
+  
+  /* Features */
+  .heroFeatures {
+    height: auto;
+    padding: 30px 10px;
+  }
+  
+  .Features {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .icon {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
